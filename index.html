@@ -1,147 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Fitness Fit</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator using javascript - Easy Tutorials</title>
+    <link rel ="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <img class="logo" src="LOGO.jpeg" alt="">
-            <ul>
-                <li><a href="#">Home</a></a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a  href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div> 
-            <h2 class="first">Worriors</h2>  
-            <h2 class="second">Fitness</h2> 
-        </div>
-        <div> 
-            <h3>NO Pain NO Gain</h3> 
-        </div>
-        <div>
-            <input type="text"name="" placeholder="Search">
-        </div>
-        <!-------Button----->
-<div>
-    <button class="firstbutton">Watch Videos</button>
-</div>
-<div>
-    <button class="secondbutton">More</button>
-</div>
-<!-------Button------------>
-
-        
-    </header>
-    <!--------Main section----->
-    <section>
-        <div>
-            <p>
-              We believe fitness should be accessible to 
-              everyone, everywhere,regardless of income or
-               access to a gym.With hundreds of professional
-                workouts, healthy reciepes and informtive articles,
-                 as well as one of the most positive communities on
-                  the web, you'll have everything you need to reach 
-                  your personal fitness goals - for free!
-            </p>
-        </div>
-    </section>
-    <!---------------Videos-------->
-    <section>
-        <h2>Related Video</h2>
-        <embed>
-
-                <iframe width="560" height="315"
-                 src="https://www.youtube.com/embed/digpucxFbMo"
-                  title="YouTube video player" frameborder="0"
-                   allow="accelerometer; autoplay; clipboard-write; 
-                   encrypted-media; gyroscope; picture-in-picture; 
-                   web-share"allowfullscreen></iframe>
-
-                   <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/8D_ItZBvbmk" 
-                    title="YouTube video player" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write;
-                     encrypted-media; gyroscope; picture-in-picture; 
-                     web-share" allowfullscreen></iframe>
-                     <iframe width="560" height="315"
-                       src="https://www.youtube.com/embed/ow3hpYJqYEI" 
-                      title="YouTube video player" frameborder="0" 
-                      allow="accelerometer; autoplay; clipboard-write; 
-                      encrypted-media; gyroscope; picture-in-picture; web-share"
-                       allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/gaX83VZugZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                       
-
-                       <iframe width="560" height="315" src="https://www.youtube.com/embed/DXLG2PJO_Ao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                       <iframe width="560" height="315" src="https://www.youtube.com/embed/Im5wJLdudDg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
-                    </embed>
-                    </section>
-                    <section>
-                        <div>
-                            <h4 class=""lastheading">
-                                Ready to try a Warriors Fitness Workout?
-                            </h4>
-                        </div>
-                        <div>
-                            <button class="last">GET STARTED</button>
-
-                        </div>
-                        <!----------------Block------------------->
-                    </section>
-                    <selection class="lastsection">
-                        <div class="block">
-                        <p>What does it mean to be fit? Finding a discrete
-                            definition is somewhat difficult. According to the 
-                            dictionary,fitness means: "the quality or state of
-                            being fit."(1)(The definition of "fit" is: "sound
-                             physically and mentally."(2)If you find those words
-                             somewhat vague, you're not alone.</p>
-                            </div>
-                            <div class="block">
-                                <p> And that's sort of the point,according to exercise
-                                    experts.Fitness doesn't have to mean that you're an
-                                    ultra-manathoner or that you can perform one pull-up or
-                                     one hundred.Fitness can mean different things for different people.
-                                </p>
-                            </div>
-                        
-                            <div class="block">
-                                <p>Additionally,exercise can increase the production
-                                    of endorphins,which are known to help produce positive
-                                    feelings and reduce the perceptionof pain(1Trusted
-                                    Source)Furthermore,exercise has been shown to reduce
-                                    symptoms in people suffering from anxiety.It can also
-                                    help them be more aware of their mental state and practice
-                                    distraction from their tears.</p>
-                            </div>
-                        </selection>
-                        <!--------------------------Footer----------------->
-                        <footer>
-                            <div class="footer1">
-                            <ul>
-                                <li><strong>Workout & Program</strong></li>
-                                <li>WORKOUT VIDEOS</li>
-                                <li>CUSTOM WORKOUT</li>
-                                <li>WORKOUT PROGRAMS</li>
-                                <li>MEAL PLANS</li>
-                            </ul>
-                        </div>
-                        <div class="footer2">
-                            <ul>
-                                <li><strong>HEALTHY LIVING</strong></li>
-                                <li>FITNESS</li>
-                                <li>HEALTH</li>
-                                <li>HEALTHY RECIPIES</li>
-                                <li>BEFORE & AFTER</li>
-                                <li>WEIGHT LOOS</li>
-                            </ul>
-                        </div>
-                        </footer>
-
     
+    <div class="container"></div>
+    <div class ="calculator">
+        <form>
+           <div class = "display">
+            <input type="text"name="display">
+           </div> 
+           <div>
+            <input type="button"  value ="AC" onclick="display.value=''" class="operator">
+            <input type="button"  value ="DE" onclick="display.value = display.value.toString().slice(0,-1)"class="operator">
+            <input type="button"  value ="." onclick="display.value+='.'"class="operator">
+            <input type="button"  value ="/"onclick="display.value+='/'"class="operator">
+           </div>
+           <div>
+            <input type="button"  value ="7" onclick="display.value+='7'">
+            <input type="button"  value ="8" onclick="display.value+='8'">
+            <input type="button"  value ="9" onclick="display.value+='9'">
+            <input type="button"  value ="*" onclick="display.value+='*'"class="operator">
+           </div>
+           <div>
+            <input type="button"  value ="4"onclick="display.value+='4'">
+            <input type="button"  value ="5" onclick="display.value+='5'">
+            <input type="button"  value ="6" onclick="display.value+='6'">
+            <input type="button"  value ="-" onclick="display.value+='-'" class="operator">
+           </div>
+           <div>
+            <input type="button"  value ="3" onclick="display.value+='3'">
+            <input type="button"  value ="2" onclick="display.value+='2'">
+            <input type="button"  value ="1" onclick="display.value+='1'">
+            <input type="button"  value ="+" onclick="display.value+='+'" class="operator">
+           </div>
+           <div>
+            <input type="button"  value ="00" onclick="display.value+='00'">
+            <input type="button"  value ="0" onclick="display.value+='0'">
+            <input type="button"  value ="="onclick="display.value = eval(display.value)"class="equal operator">
+           </div>
+        </form>
+    </div>
 </body>
 </html>

@@ -1,234 +1,63 @@
-*{
+*{ 
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-
+    font-family:'Poppins',sans-serif;
+    box-sizing: border-box;
 }
 
-header {
-   
-    background-image: url(back.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-}
-.logo{
-    width: 10%;
-    padding: 15px;
-    background: pink;
-
-}
-nav{
-    display: flex;
-    flex-direction:  row;
-}
-
-nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background: none;
-}
-nav ul li{
-    list-style: none;
-    padding: 20px 10px;
-    background: none;
-}
-nav ul li a{
-    background: #c4077f;
-    color: white;
-    text-decoration: none;
-    padding: 5px 20px;
-    font-size: 1.1em;
-    border-radius: 13px;
-}
-nav ul li a:hover{
-    background: #239e04; 
-    transition: 0.6s ease;
-}
-h2{
-    color: white;
-    background:none;
-}
-
-div h2.first{
-    float: left;
-    top: 40%;
-    left:25%;
-    transform: translate(-50%,-50%);
-    position: absolute;
-    background: none;
-    font-size: 6em;
-}
-div h2.second{
-    float: left;
-    top: 52%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    background: none;
-    font-size: 5.6em;
-}
-div h3{
-    float: left;
-    top: 59%;
-    left: 18%;
-    color: #2dc407;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    background: none;
-    font-size: 1.5em;
-
-}
-div input{
-    float: left;
-    top: 7%;
-    left: 85%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    background: black;
-    border-right: pink;
-    outline: none;
-    border-radius: 25px;
-}
-input{
-    padding: 15px  40px;
-    font-style: 1.1em;
-    color: #fefafa;
-    width: 25%;
-    transition: 0.25s;
-}
-input:focus{
-    width: 20%;
-}
-button{
-    font-size: 1.6em;
-    padding: 10px 3px;
-    color: rgb(255, 255, 255);
-    border-radius: 50px;
-    cursor: pointer;
-}
-div button.firstbutton{
-    float: left;
-    top:70%;
-    left:17%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    background: #2dc407;
-    border-style: none;
-    outline: none;
-    width: 17%;
-    transition:0.25s;
-
-}
-div button.firstbutton:focus{
-    width:19%;
-    background: #239e04;
-}
-
-
-div button.secondbutton{
-    float: left;
-    top:70%;
-    left:32%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    background: #2dc407;
-    border-style: none;
-    outline: none;
-    width: 9%;
-    transition:0.25s
-}
-
-div button.secondbutton:focus{
-    width:11%;
-    background: #239e04;
-
-}
-section{
-    background: white;
-    margin:auto;
-    padding: 0;
-}
-p{
-    font-size: 1.2em;
-    background:white;
-    padding:  50px 150px;
-}
-section h2{
-    color: #4298d0;
-    font-size: 3em;
-    padding-bottom: 50px;
-    border-bottom: 3px solid #4298d0;
-    text-align: center;
-    align-items: center;
-}
-iframe{
-    padding:30px 40px;
-}
-section  h4{
+.container{
     width:100%;
-    font-size: 2em;
-    color:white;
-    padding: 60px 200px;
-    background:#4298d0;
-}
-button.last{
-    font-size: 1em;
-    color: white;
-    padding:10px 15px;
-    background:#041825;
-    border-style: none;
-    outline:none;
-    border-radius:10px;
+    height:100vh;
+    background:#81a66d;
+    display:flex;
     align-items: center;
-    text-align: center;
-    float:left;
-    top:273%
-    left:70%;
-    transform:translate(-50%, -50%);
-    position:absolute;
-
-}
-.lastsection .block{
-    padding-left: 10px;
-    padding-bottom: 30px;
-}
-.block{
-    display: inline-flex;
-    flex-direction: row;
     justify-content: center;
+}
+
+.calculator{
+    background: #7754a1;
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
     align-items: center;
-    width: 32%;
+    justify-content: center;
 }
-section.lastsection .block p{
-    color: #a4afb1;
-    font-size: 1em;
-    background: #041825;
-    text-align: justify;
-    align-items: center;
-    padding: 50px;
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 15px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
 }
-footer{
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    text-align: center;
-    padding: 0 0;
-    margin:  0 0;
-    background: #212432;
-    color: white;
-    font-size: 0.8em;
-    padding: 50px 0;
-    line-height: 45px;
-}
-footer ul{
-    list-style: none;
-}
-.footer1, .footer2, .footer3{
-    padding: 0px 60px;
-    text-align: justify;
-    color:#B1C0C2 ;
-}
+    form .display{
+        display: flex;
+        
+        justify-content:flex-end;
+        margin: 20px 0;
+    }
+    form .display input{
+        text-align: right;
+        flex:10;
+        font-size: 45px;
+        box-shadow: none;
+    }
+    form input.equal{
+        width: 145px;
+    }
+    form input.operator{
+        color:#b1ff33;
+    }
+
+
+
+
+
+
+
 
